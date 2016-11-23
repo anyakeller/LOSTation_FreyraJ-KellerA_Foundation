@@ -5,316 +5,230 @@
         <link rel="stylesheet" href="css/foundation.css">
         <style>
 .header {
+    position: fixed;
     text-align: center;
-    background: url("https://static.pexels.com/photos/6894/summer-photographer-pier-adventure-large.jpg") no-repeat center center;
+    background: url("assets/tinyTrek.jpg") no-repeat center center;
     background-size: cover;
-    padding: 4rem; }
+    background-position: 10% 20%;
+    padding: 4rem;
+    width: 100%;
+}
 
 .header .main-header {
-    color: #666; }
+    color: #F1FFE7; }
 
 .header-subnav {
     float: none;
     position: relative;
     top: 4rem;
     text-align: center;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-shadow:
+        -1px 1px 0 #ffffff,
+        1px -1px 0 #000000,
+        1px 1px 0 rgba(0, 0, 0, 0),
+        -1px -1px 0 rgba(0, 0, 0, 0);
+}
 .header-subnav li {
     float: none;
     display: inline-block; }
+
 .header-subnav li a {
     padding: 0.9rem 1rem 0.75rem;
     font-size: 0.875rem;
-    color: #fff;
+    color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     display: block;
     font-weight: bold;
     letter-spacing: 1px; }
 .header-subnav li a.is-active {
     background: rgba(250, 250, 250, 0.7);
+    text-shadow: -1px 1px 0 rgba(0, 0, 0, 0);
     color: #333; }
 .header-subnav li a:hover {
     background: rgba(250, 250, 250, 0.7);
+    text-shadow: -1px 1px 0 rgba(0, 0, 0, 0);
     color: #333;
     transition: all .25s ease-in-out; }
+
+.parallax-content {
+    max-width: 100%;
+    position: relative;
+    top: 350px;
+    padding: 25px;
+    font-size: 20px;
+    background-color: #fff;
+}
         </style>
     </head>
 
-
-    <header class="header">
-        <h1 class="main-header">Foundation Before Concealer (or Bootstrap?)<h1>
-        <ul class="header-subnav">
-            <li><a href="#">Take Action!</a></li>
-            <li><a href="#" class="is-active">Carpe Diem!</a></li>
-            <li><a target="_blank" href="http://zurb.com/responsive">Just do it!</a></li>
-        </ul>
-    </header>
     <body>
 
-
-
-        <h1></h1>
-        <h3>Here are some cool things you can do with Foundation framework</h3>
-
-        thing1
-        thing2
-        thing3
-
+        <header class="header">
+            <h1 class="main-header">Cool Foundation Features</h1>
+            <h3 class="main-header">To help you feel less LOSTation</h3>
+            <h3 class="main-header">And more FOUNDation</h3>
+            <ul class="header-subnav">
+                <li><a href="#first">Sticky Stiuation</a></li>
+                <li><a href="#" class="is-active">Top This!</a></li>
+                <li><a href="#second">Abide by the Rules</a></li>
+            </ul>
+        </header>
         <br>
-        <br>
 
-        <div class="row">
-            <div class="columns small-12">
-                <div id="lorem" class="columns medium-6" data-something>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+        <div class="parallax-content">
+
+            <section id="potato" data-magellan-target="potato">
+
+                <div class="row">
+                    <h1>Oh the things you can do!</h1>
+
+                    <ul>
+                        <li>Try clicking one of the tabs in the nav above - this feature uses Magellan</li>
+                        <li>Scroll down and watch the picture follow - this feature uses Sticky</li>
+                        <li>Check out the nice form at the bottom - this feature uses Abide</li>
+                        <li>Try resizing the screen at different points along the page - this feature uses the grid system</li>
+                    </ul>
                 </div>
-                <div class="columns medium-6 right" data-sticky-container>
-                    <div class="sticky is-anchored is-at-top" data-sticky data-anchor="lorem">
-                        <img class="thumbnail" src="assets/bridge.jpg" alt="There was an image here">
+                <div class="row">
+                    <div class="columns small-12">
+                        <section id="first" data-magellan-target="first">
+
+                            <div id="lorem" class="columns medium-6" data-something>
+
+                                <h1>Some Lorem Ipsum for You</h1>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div class="columns medium-6 right" data-sticky-container>
+                                <div class="sticky is-anchored is-at-top" data-sticky data-anchor="lorem">
+                                    <img class="thumbnail" src="assets/bridge.jpg" alt="There was an image here">
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-            </div>
+
+                <br>
+                <br>
+
+                <script type="text/javascript" src="js/vendor/jquery.js"></script>
+                <!-- this will include every plugin and utility required by Foundation -->
+                <script type="text/javascript" src="js/vendor/foundation.min.js"></script>
+                <script>
+$(document).foundation();
+                </script>
+
+                <br>
+                <br>
+
+                <ul class="horizontal menu" data-magellan>
+                    <li><a href="#first">Sticky Situation</a></li>
+                    <li><a href="#second">Abide by the Rules</a></li>
+                </ul>
+                <section id="second" data-magellan-target="second">
+
+                    <h1>Sleek Form</h1>
+                    <form data-abide novalidate>
+                        <div data-abide-error class="alert callout" data-magellan-target="second" style="display: none;">
+                            <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <label>Number Required
+                                    <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+                                    <span class="form-error">
+                                        Yo, you had better fill this out, it's required.
+                                    </span>
+                                </label>
+                                <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+                            </div>
+                            <div class="small-12 columns">
+                                <label>Nothing Required!
+                                    <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore>
+                                </label>
+                                <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using `data-abide-ignore`</p>
+                            </div>
+                            <div class="small-12 columns">
+                                <label>Password Required
+                                    <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText" required >
+                                    <span class="form-error">
+                                        I'm required!
+                                    </span>
+                                </label>
+                                <p class="help-text" id="exampleHelpText">Enter a password please.</p>
+                            </div>
+                            <div class="small-12 columns">
+                                <label>Re-enter Password
+                                    <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
+                                    <span class="form-error">
+                                        Hey, passwords are supposed to match!
+                                    </span>
+                                </label>
+                                <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <label>URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
+                                    <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
+                                </label>
+                            </div>
+                            <div class="medium-6 columns">
+                                <label>European Cars, Choose One, it can't be the blank option.
+                                    <select id="select" required>
+                                        <option value=""></option>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <fieldset class="large-6 columns">
+                                <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
+                                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+                                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
+                                <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+                            </fieldset>
+                            <fieldset class="large-6 columns">
+                                <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
+                                <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
+                                <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
+                                <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
+                            </fieldset>
+                            <fieldset class="large-6 columns">
+                                <legend>Check these out</legend>
+                                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                            </fieldset>
+                        </div>
+                        <div class="row">
+                            <fieldset class="large-6 columns">
+                                <button class="button" type="submit" value="Submit">Submit</button>
+                            </fieldset>
+                            <fieldset class="large-6 columns">
+                                <button class="button" type="reset" value="Reset">Reset</button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </section>
         </div>
 
-        <br>
-        <br>
-
-        <form data-abide novalidate>
-            <div data-abide-error class="alert callout" style="display: none;">
-                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+            </section>
             </div>
-            <div class="row">
-                <div class="small-12 columns">
-                    <label>Number Required
-                        <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
-                        <span class="form-error">
-                            Yo, you had better fill this out, it's required.
-                        </span>
-                    </label>
-                    <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-                </div>
-                <div class="small-12 columns">
-                    <label>Nothing Required!
-                        <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore>
-                    </label>
-                    <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using `data-abide-ignore`</p>
-                </div>
-                <div class="small-12 columns">
-                    <label>Password Required
-                        <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText" required >
-                        <span class="form-error">
-                            I'm required!
-                        </span>
-                    </label>
-                    <p class="help-text" id="exampleHelpText">Enter a password please.</p>
-                </div>
-                <div class="small-12 columns">
-                    <label>Re-enter Password
-                        <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
-                        <span class="form-error">
-                            Hey, passwords are supposed to match!
-                        </span>
-                    </label>
-                    <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="medium-6 columns">
-                    <label>URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
-                        <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
-                    </label>
-                </div>
-                <div class="medium-6 columns">
-                    <label>European Cars, Choose One, it can't be the blank option.
-                        <select id="select" required>
-                            <option value=""></option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <fieldset class="large-6 columns">
-                    <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
-                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
-                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
-                    <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
-                </fieldset>
-                <fieldset class="large-6 columns">
-                    <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
-                    <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
-                    <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
-                    <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
-                </fieldset>
-                <fieldset class="large-6 columns">
-                    <legend>Check these out</legend>
-                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                    <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
-                    <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-                </fieldset>
-            </div>
-            <div class="row">
-                <fieldset class="large-6 columns">
-                    <button class="button" type="submit" value="Submit">Submit</button>
-                </fieldset>
-                <fieldset class="large-6 columns">
-                    <button class="button" type="reset" value="Reset">Reset</button>
-                </fieldset>
-            </div>
-        </form>
-
-
-        <script type="text/javascript" src="js/vendor/jquery.js"></script>
-        <!-- this will include every plugin and utility required by Foundation -->
-        <script type="text/javascript" src="js/vendor/foundation.min.js"></script>
-        <script>
-$(document).foundation();
-        </script>
-	
-	<br>
-	<br>
-	
-	<ul class="horizontal menu" data-magellan>
-	  <li><a href="#first">Sticky Situation</a></li>
-	  <li><a href="#second">Abide by the Rules</a></li>
-	</ul>
-
-	<br>
-	<br>
-	
-	<div class="sections">
-	  <div class="row">
-	    <div class="columns small-12">
-	      <section id="first" data-magellan-target="first">
-		<div id="lorem" class="columns medium-6" data-something>
-		  <p>
-		    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		  </p>
-		  <p>
-		    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		  </p>
-		  <p>
-		    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		  </p>
-		  <p>
-		    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		  </p>
-		</div>
-		<div class="columns medium-6 right" data-sticky-container>
-		  <div class="sticky is-anchored is-at-top" data-sticky data-anchor="lorem">
-		    <img class="thumbnail" src="assets/bridge.jpg" alt="There was an image here">
-		  </div>
-		</div>
-	      </section>
-	    </div>
-	  </div>
-	  
-	  <br>
-	  <br>
-
-	  <section id="second" data-magellan-target="second">
-	    <form data-abide novalidate>
-	      <div data-abide-error class="alert callout" data-magellan-target="second" style="display: none;">
-		<p><i class="fi-alert"></i> There are some errors in your form.</p>
-	      </div>
-	      <div class="row">
-		<div class="small-12 columns">
-		  <label>Number Required
-		    <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
-		    <span class="form-error">
-		      Yo, you had better fill this out, it's required.
-		    </span>
-		  </label>
-		  <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-		</div>
-		<div class="small-12 columns">
-		  <label>Nothing Required!
-		    <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore>
-		  </label>
-		  <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using `data-abide-ignore`</p>
-		</div>
-		<div class="small-12 columns">
-		  <label>Password Required
-		    <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText" required >
-		    <span class="form-error">
-		      I'm required!
-		    </span>
-		  </label>
-		  <p class="help-text" id="exampleHelpText">Enter a password please.</p>
-		</div>
-		<div class="small-12 columns">
-		  <label>Re-enter Password
-		    <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
-		    <span class="form-error">
-		      Hey, passwords are supposed to match!
-		    </span>
-		  </label>
-		  <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
-		</div>
-	      </div>
-	      <div class="row">
-		<div class="medium-6 columns">
-		  <label>URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
-		    <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
-		  </label>
-		</div>
-		<div class="medium-6 columns">
-		  <label>European Cars, Choose One, it can't be the blank option.
-		    <select id="select" required>
-		      <option value=""></option>
-		      <option value="volvo">Volvo</option>
-		      <option value="saab">Saab</option>
-		      <option value="mercedes">Mercedes</option>
-		      <option value="audi">Audi</option>
-		    </select>
-		  </label>
-		</div>
-	      </div>
-	      <div class="row">
-		<fieldset class="large-6 columns">
-		  <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
-		  <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
-		  <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
-		  <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
-		</fieldset>
-		<fieldset class="large-6 columns">
-		  <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
-		  <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
-		  <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
-		  <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
-		</fieldset>
-		<fieldset class="large-6 columns">
-		  <legend>Check these out</legend>
-		  <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-		  <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
-		  <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-		</fieldset>
-	      </div>
-	      <div class="row">
-		<fieldset class="large-6 columns">
-		  <button class="button" type="submit" value="Submit">Submit</button>
-		</fieldset>
-		<fieldset class="large-6 columns">
-		  <button class="button" type="reset" value="Reset">Reset</button>
-		</fieldset>
-	      </div>
-	    </form>
-	  </section>
-	</div>
-
     </body>
 </html>
